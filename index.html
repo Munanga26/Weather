@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weather page </title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Weather App</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <header>
+      <form>
+        <input type="search" placeholder="Enter city..." />
+        <button type="button" class="btn">Search</button>
+      </form>
+    </header>
     <div class="main">
-        <div  class="info">
-            <input type="search" name=""placeholder="Enter city..."  id="search-btn">
-            <button type="button" class="btn">Search</button>
-        </div>
-        <div>
-            
-        </div>
+      <div>
+        <h1>Paris</h1>
+        <p>Sunday 20:16, moderate rain</p>
+        <br />
+        <p>Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong></p>
+        <span class="current-temperature-icon">☀️</span>
+        <span class="current-temperature-value" id="current-temperature">24 °C</span>
+      </div>
+      <footer>
+        This project was coded by <a href="https://github.com/Munanga26" target="_blank">Elsa Nsamba</a> and is on <a href="https://github.com/Munanga26/weather_design" target="_blank"> on GitHub</a>and hosted on <a href="https://664102cba80f92fba479b560--sunny-praline-98d030.netlify.app/" target="_blank">hosted on Netlify</a>
+      </footer>
     </div>
-</body>
+    <script src="./src/index.js"></script>
+  </body>
 </html>
